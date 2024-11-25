@@ -3,4 +3,5 @@
 __pycache__
 Makefile
 env
+migrations
 
