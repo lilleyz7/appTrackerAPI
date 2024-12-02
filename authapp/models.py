@@ -30,7 +30,9 @@ class CustomUser(AbstractUser):
     username = models.CharField(max_length=30, unique=True)
     testfield = models.CharField(max_length=30)
 
-    REQUIRED_FIELDS = ['email']
+    USERNAME_FIELD = 'email'
+
+    REQUIRED_FIELDS = ['username']
 
     objects = CustomUserManager()
 
